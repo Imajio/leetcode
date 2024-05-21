@@ -1,15 +1,6 @@
 package hard.median_of_two_sorted_arrays;
 public class Solution {
-    public static void main(String[] args) {
-        int[] nums1 = new int[2];
-        nums1[0] = 1;
-        nums1[1] = 2;
-        int[] nums2 = new int[2];
-        nums2[0] = 3;
-        nums2[1] = 4;
-        System.out.println(findMedianSortedArrays(nums1,nums2));
-    }
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n = nums1.length;
         int m = nums2.length;
         int i = 0, j = 0, m1 = 0, m2 = 0;
