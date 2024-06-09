@@ -3,19 +3,23 @@ package easy.check_if_numbers_are_ascending_in_a_sentence;
 public class Solution {
     public boolean areNumbersAscending(String s) {
         String[] tokens = s.split(" ");
-        int previousNumber = -1; // Initialize to a value less than any possible number in the string
+        // Initialize to a value less than any possible number in the string
+        int previousNumber = -1;
 
         for (String token : tokens) {
             if (isNumeric(token)) {
                 int currentNumber = Integer.parseInt(token);
                 if (currentNumber <= previousNumber) {
-                    return false; // If the current number is not greater than the previous one, return false
+                    // If the current number is not greater than the previous one, return false
+                    return false;
                 }
-                previousNumber = currentNumber; // Update the previous number to the current one
+                // Update the previous number to the current one
+                previousNumber = currentNumber;
             }
         }
 
-        return true; // If all numbers are strictly increasing, return true
+        // If all numbers are strictly increasing, return true
+        return true;
     }
 
     private boolean isNumeric(String str) {
