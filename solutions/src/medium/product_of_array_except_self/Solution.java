@@ -2,7 +2,7 @@ package medium.product_of_array_except_self;
 
 class Solution {
 
-    public int[] productExceptSelf(int[] nums) {
+    public static int[] productExceptSelf(int[] nums) {
         int[] arr = new int[nums.length];
         int right = 1, left = 1;
         for (int i = 0; i < nums.length; i++) {
